@@ -2,6 +2,7 @@
 @import "./partials/fonts";
 @import "./partials/colors";
 @import "./partials/header";
+@import "./partials/_biography";
 
 * {
     box-sizing: border-box;
@@ -15,10 +16,11 @@
     padding-top: 50px;
     padding-left: 16px;
     height:183px;
+    font-size: 28px;
     background-image: url(../assets/images/unsplash/club-1.jpg);
     background-size: cover;
     background-position: center;
-    height: 183px;
     color: $white;
 
 }
+

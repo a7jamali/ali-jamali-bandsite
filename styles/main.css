@@ -31,7 +31,10 @@
   /*NOTE: The margin between the logo and nav-items 
     is set at -4px, but it will still resemble the 16px
     dictated in the specsheet. This is because the SVG logo
-    already incorporates linespacing below "BANDSITE*/
+    already incorporates significant linespacing below "BANDSITE"
+    
+    Setting a 16px margin between the logo and the nav-items
+    in an 80px header will push the nav-items outside.*/
 }
 
 .header__logo {
@@ -66,6 +69,45 @@
   z-index: 1;
 }
 
+.about {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.about__title {
+  margin-left: 5vw;
+}
+
+.about__image {
+  max-width: 90vw;
+  margin: 24px auto;
+}
+
+.about__quote {
+  margin: 0 5vw 32px 5vw;
+}
+
+.about__attribution {
+  margin: 0 5vw 40px 5vw;
+}
+
+.about__names {
+  margin: 0 5vw 24px 5vw;
+}
+
+.about__body {
+  margin: 0 5vw 72px 5vw;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -78,10 +120,10 @@
   padding-top: 50px;
   padding-left: 16px;
   height: 183px;
+  font-size: 28px;
   background-image: url(../assets/images/unsplash/club-1.jpg);
   background-size: cover;
   background-position: center;
-  height: 183px;
   color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

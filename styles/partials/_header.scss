@@ -12,7 +12,11 @@
     /*NOTE: The margin between the logo and nav-items 
     is set at -4px, but it will still resemble the 16px
     dictated in the specsheet. This is because the SVG logo
-    already incorporates linespacing below "BANDSITE*/
+    already incorporates significant linespacing below "BANDSITE"
+    
+    Setting a 16px margin between the logo and the nav-items
+    in an 80px header will push the nav-items outside.*/
+
     &__logo {
         margin-top: 8px;
         margin-bottom: -4px;
