@@ -2,15 +2,16 @@
 @import "./partials/fonts";
 @import "./partials/colors";
 @import "./partials/header";
-@import "./partials/_biography";
+@import "./partials/about-section";
+@import "./partials/gallery";
+@import "./partials/footer";
 
 * {
     box-sizing: border-box;
-    font-family: Avenir;
+    font-family: AvenirRegular;
     margin: 0;
     padding: 0;
 }
-
 
 .hero__text {
     padding-top: 50px;
@@ -23,4 +24,5 @@
     color: $white;
 
 }
+
 

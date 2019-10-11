@@ -108,10 +108,56 @@
   margin: 0 5vw 72px 5vw;
 }
 
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.gallery__title {
+  margin-bottom: 16px;
+  margin-left: 5vw;
+}
+
+.gallery__photo {
+  max-width: 90vw;
+  margin: 8px auto;
+}
+
+.footer {
+  margin-top: 20px;
+  color: #fff;
+  background: #323232;
+}
+
+.footer__motto {
+  padding-top: 30px;
+  margin: auto auto 10px 5vw;
+}
+
+.footer__logo {
+  display: none;
+}
+
+/*
+"footer__body--america" contains the info 
+for the agent for US / South America / Japan.
+
+"footer__body--other" contains the info 
+for the agent for UK / EU / AU.
+
+*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Avenir;
+  font-family: AvenirRegular;
   margin: 0;
   padding: 0;
 }

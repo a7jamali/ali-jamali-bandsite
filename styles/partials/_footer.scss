@@ -1,0 +1,24 @@
+.footer {
+    margin-top: 20px;
+    color: $white;
+    background: $black;
+
+    &__motto {
+        padding-top: 30px;
+        margin: auto auto 10px 5vw;
+
+    }
+
+    &__logo {
+        display: none;
+      }
+}
+
+/*
+"footer__body--america" contains the info 
+for the agent for US / South America / Japan.
+
+"footer__body--other" contains the info 
+for the agent for UK / EU / AU.
+
+*/
