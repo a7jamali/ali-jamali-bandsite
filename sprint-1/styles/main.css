@@ -46,6 +46,12 @@
   text-decoration: none;
 }
 
+.header a:hover {
+  color: #ce3b96;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
 .header__navbar-list {
   font-weight: 600;
   padding-bottom: 0;
