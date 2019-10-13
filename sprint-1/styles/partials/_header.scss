@@ -21,6 +21,11 @@
         margin-top: 8px;
     }
 
+    & a {
+        color: $white;
+        text-decoration: none;
+    }
+
     &__navbar-list {
         font-weight: 600;
         padding-bottom: 0;
@@ -83,25 +88,20 @@
 @include huge {
     .header {
         padding-left: 12.5vw;
+    
+    
+    
     }
 
-    &__navbar-list {
-        align-self: center;
-        padding-left: 56px;
-    
-        }
-    
-        &__navbar-item {
-        padding-right: 3.88vw;
-        align-self: center;
-    
-        }
+
 
         #active {
             margin-top: 5px;
             border-bottom: 4px solid $white;
             line-height: 56px;
             width: 5.55vw;
+            margin-right: 3.88vw;
+
         }
             
 }       

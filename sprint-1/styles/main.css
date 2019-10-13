@@ -41,6 +41,11 @@
   margin-top: 8px;
 }
 
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .header__navbar-list {
   font-weight: 600;
   padding-bottom: 0;
@@ -106,23 +111,12 @@
   .header {
     padding-left: 12.5vw;
   }
-  __navbar-list {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    padding-left: 56px;
-  }
-  __navbar-item {
-    padding-right: 3.88vw;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
   #active {
     margin-top: 5px;
     border-bottom: 4px solid #fff;
     line-height: 56px;
     width: 5.55vw;
+    margin-right: 3.88vw;
   }
 }
 
