@@ -33,5 +33,16 @@
     height: 400px;
     font-size: 3rem;
     padding-top: 100px;
+    padding-left: 3.125vw;
+    }
+}
+
+@include huge {
+
+    .hero__text{
+    height: 670px;
+    font-size: 5rem;
+    padding-top: 200px;
+    padding-left: 12.5vw;
     }
 }

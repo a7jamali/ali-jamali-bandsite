@@ -43,6 +43,27 @@
 
     .about {
         
+        &__title {
+            margin-left: 3.125vw;
+        }
+
+        &__quote {
+            margin: 0 3.125vw 32px 3.125vw;
+        }
+    
+        &__attribution { 
+            margin: 0 3.125vw 40px 3.125vw;
+    
+        }
+    
+        &__names {
+            margin: 0 3.125vw 24px 3.125vw;
+    
+        }
+    
+        &__body {
+            margin: 0 3.125vw 72px 3.125vw;
+        }
 
         &__image {
             width: 93.75vw;
@@ -56,6 +77,52 @@
 
         & p {
             margin-right: 3.125vw;
+        }
+
+}
+}
+
+@include huge {
+
+    .about {
+        
+        margin-top: 48px;
+
+        &__title {
+            margin-left: 12.5vw;
+        }
+
+        &__quote {
+            margin: 48px 30vw 0 18.88vw;
+        }
+    
+        &__attribution { 
+            margin: 40px 18.88vw 0 18.88vw;
+    
+        }
+    
+        &__names {
+            margin: 56px 18.88vw 0 18.88vw;
+    
+        }
+    
+        &__body {
+            margin: 32px 18.88vw 48px 18.88vw;
+        }
+
+        &__image {
+            margin-top: 48px;
+            width: 62.22vw;
+            height: 450px;
+        }
+
+        &__body {
+            display: flex;
+
+        }
+
+        & p {
+            margin-right: 3.333vw;
         }
 
 }

@@ -18,10 +18,15 @@
 
 @include medium {
     .gallery {
+
+        &__title {
+            margin-left: 3.125vw;
+        }
+
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        margin: 0 24px;
+        margin: 0 1.5625vw;
 
 
         &__photo {
@@ -30,4 +35,28 @@
         padding-bottom: 24px;
         }
     }
+}
+
+@include huge{
+
+    .gallery {
+
+
+        &__title {
+            margin: 48px auto 64px 12.5vw;
+        }
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0 12.5vw;
+
+
+        &__photo {
+        width: 23.8;
+        height: 193px;
+        margin: 12px;
+        }
+    }
+
 }
