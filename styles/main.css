@@ -85,11 +85,16 @@
 
 .about__title {
   margin-left: 5vw;
+  font-family: AvenirBold;
 }
 
 .about__image {
   max-width: 90vw;
   margin: 24px auto;
+}
+
+.about__quote, .about__attribution, .about__names {
+  font-family: AvenirDemi;
 }
 
 .about__quote {
@@ -122,6 +127,7 @@
 }
 
 .gallery__title {
+  font-family: AvenirBold;
   margin-bottom: 16px;
   margin-left: 5vw;
 }
@@ -137,13 +143,44 @@
   background: #323232;
 }
 
+.footer__header, .footer__body {
+  margin-left: 5vw;
+}
+
 .footer__motto {
+  font-family: AvenirBold;
   padding-top: 30px;
-  margin: auto auto 10px 5vw;
+  margin-bottom: 40px;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 70vw;
+  margin-bottom: 40px;
 }
 
 .footer__logo {
   display: none;
+}
+
+.footer h4 {
+  font-family: AvenirDemi;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  margin-bottom: 30px;
+}
+
+.footer__copyright {
+  margin-left: 5vw;
+  padding-bottom: 35px;
+  padding-right: 35vw;
 }
 
 /*
@@ -166,6 +203,7 @@ for the agent for UK / EU / AU.
   padding-top: 50px;
   padding-left: 16px;
   height: 183px;
+  font-family: AvenirBold;
   font-size: 28px;
   background-image: url(../assets/images/unsplash/club-1.jpg);
   background-size: cover;

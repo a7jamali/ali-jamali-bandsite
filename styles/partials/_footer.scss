@@ -3,15 +3,45 @@
     color: $white;
     background: $black;
 
-    &__motto {
-        padding-top: 30px;
-        margin: auto auto 10px 5vw;
+    &__header, &__body {
+        margin-left: 5vw;
+    }
 
+    &__motto {
+        font-family: AvenirBold;
+        padding-top: 30px;
+        margin-bottom: 40px;
+
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 70vw;
+        margin-bottom: 40px;
     }
 
     &__logo {
         display: none;
       }
+
+    & h4 {
+        font-family: AvenirDemi;
+        margin-bottom: 20px;
+    }
+
+    & p {
+        margin-bottom: 30px;
+
+    }
+
+    &__copyright {
+        margin-left: 5vw;
+        padding-bottom: 35px;
+        padding-right: 35vw;
+
+    }
+
 }
 
 /*

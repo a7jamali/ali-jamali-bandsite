@@ -6,6 +6,7 @@
 
     &__title {
         margin-left: 5vw;
+        font-family: AvenirBold;
     }
 
     &__image {
@@ -13,6 +14,11 @@
         margin: 24px auto;
         
     }
+
+    &__quote, &__attribution, &__names {
+        font-family: AvenirDemi;
+    }
+
 
     &__quote {
         margin: 0 5vw 32px 5vw;
