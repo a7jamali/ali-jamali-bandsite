@@ -12,6 +12,13 @@
     &__photo {
         max-width: 90vw;
         margin: 8px auto;
+        filter: blur(5px);
+
+        &:hover {
+            filter: blur(0) grayscale(100%);
+
+
+        }
         
     }
 }
@@ -33,6 +40,12 @@
         width: 29.166%;
         height: 126px;
         padding-bottom: 24px;
+
+        &:hover {
+            filter: blur(0) grayscale(100%);
+
+        }
+
         }
     }
 }
@@ -56,6 +69,14 @@
         width: 23.8;
         height: 193px;
         margin: 12px;
+
+        &:hover {
+            filter: blur(0) grayscale(100%);
+            flex-grow: 2;
+            height: auto;
+
+        }
+
         }
     }
 
