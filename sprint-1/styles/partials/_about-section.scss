@@ -38,3 +38,25 @@
         margin: 0 5vw 72px 5vw;
     }
 }
+
+@include medium {
+
+    .about {
+        
+
+        &__image {
+            width: 93.75vw;
+            height: 362px;
+        }
+
+        &__body {
+            display: flex;
+
+        }
+
+        & p {
+            margin-right: 3.125vw;
+        }
+
+}
+}

@@ -27,4 +27,11 @@
 
 }
 
+@include medium {
 
+    .hero__text{
+    height: 400px;
+    font-size: 3rem;
+    padding-top: 100px;
+    }
+}

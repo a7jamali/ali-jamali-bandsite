@@ -44,6 +44,23 @@
 
 }
 
+@include medium {
+    .footer{
+
+        
+        &__header {
+            display: flex;
+            justify-content: flex-start;
+            
+        }
+
+        &__logo {
+            align-self: center;
+        }
+
+    }
+}
+
 /*
 "footer__body--america" contains the info 
 for the agent for US / South America / Japan.

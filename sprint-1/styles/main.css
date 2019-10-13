@@ -29,7 +29,7 @@
   background: #323232;
   font-size: 1.25rem;
   /*NOTE: The margin between the logo and nav-items 
-    is set at -4px, but it will still resemble the 16px
+    is set at 0, but it will still resemble the 16px
     dictated in the specsheet. This is because the SVG logo
     already incorporates significant linespacing below "BANDSITE"
     
@@ -39,7 +39,6 @@
 
 .header__logo {
   margin-top: 8px;
-  margin-bottom: -4px;
 }
 
 .header__navbar-list {
@@ -67,6 +66,40 @@
   border-bottom: 4px solid #fff;
   padding-bottom: 4px;
   z-index: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+    padding-left: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__navbar-list {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-left: 80px;
+  }
+  .header__navbar-item {
+    padding-right: 80px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #active {
+    margin-top: 5px;
+    border-bottom: 4px solid #fff;
+    line-height: 56px;
+    width: 33%;
+  }
 }
 
 .about {
@@ -113,6 +146,21 @@
   margin: 0 5vw 72px 5vw;
 }
 
+@media only screen and (min-width: 768px) {
+  .about__image {
+    width: 93.75vw;
+    height: 362px;
+  }
+  .about__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about p {
+    margin-right: 3.125vw;
+  }
+}
+
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,6 +183,27 @@
 .gallery__photo {
   max-width: 90vw;
   margin: 8px auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 24px;
+  }
+  .gallery__photo {
+    width: 29.166%;
+    height: 126px;
+    padding-bottom: 24px;
+  }
 }
 
 .footer {
@@ -183,6 +252,22 @@
   padding-right: 35vw;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__logo {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 /*
 "footer__body--america" contains the info 
 for the agent for US / South America / Japan.
@@ -209,5 +294,13 @@ for the agent for UK / EU / AU.
   background-size: cover;
   background-position: center;
   color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__text {
+    height: 400px;
+    font-size: 3rem;
+    padding-top: 100px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

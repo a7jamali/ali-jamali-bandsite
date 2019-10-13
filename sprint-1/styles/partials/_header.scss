@@ -10,7 +10,7 @@
     font-size: 1.25rem;
 
     /*NOTE: The margin between the logo and nav-items 
-    is set at -4px, but it will still resemble the 16px
+    is set at 0, but it will still resemble the 16px
     dictated in the specsheet. This is because the SVG logo
     already incorporates significant linespacing below "BANDSITE"
     
@@ -19,7 +19,6 @@
 
     &__logo {
         margin-top: 8px;
-        margin-bottom: -4px;
     }
 
     &__navbar-list {
@@ -48,3 +47,35 @@
 
 }
 
+@include medium {
+
+    .header {
+    height: 80px;
+    padding-left: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__navbar-list {
+    align-self: center;
+    padding-left: 80px;
+
+    }
+
+    &__navbar-item {
+    padding-right: 80px;
+    align-self: center;
+
+    }
+
+
+    }
+
+    #active {
+        margin-top: 5px;
+        border-bottom: 4px solid $white;
+        line-height: 56px;
+        width: 33%;
+}
+
+}

@@ -15,3 +15,19 @@
         
     }
 }
+
+@include medium {
+    .gallery {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0 24px;
+
+
+        &__photo {
+        width: 29.166%;
+        height: 126px;
+        padding-bottom: 24px;
+        }
+    }
+}
