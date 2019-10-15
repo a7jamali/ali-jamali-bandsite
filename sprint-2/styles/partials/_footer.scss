@@ -1,0 +1,157 @@
+.footer {
+    margin-top: 20px;
+    color: $white;
+    background: $black;
+
+    &__header, &__body {
+        margin-left: 5vw;
+    }
+
+    &__motto {
+        font-family: AvenirBold;
+        padding-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 70vw;
+        margin-bottom: 40px;
+    }
+
+    &__logo {
+        display: none;
+      }
+
+    & h4 {
+        font-family: AvenirDemi;
+        margin-bottom: 20px;
+    }
+
+    & p {
+        margin-bottom: 30px;
+
+    }
+
+    & a {
+        text-decoration: none;
+        color: $white;
+    }
+
+    &__copyright {
+        margin-left: 5vw;
+        padding-bottom: 35px;
+        padding-right: 35vw;
+
+    }
+
+}
+
+@include medium {
+    .footer{
+
+        width: 100vw;
+
+        &__header, &__body {
+            margin-left: 3.125vw;
+            margin-right: 3.125vw;
+        }
+        
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+
+            
+        }
+
+
+        &__icons {
+            margin: 0;
+            margin-left: -16vw;
+            width: 124px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__social {
+            margin: 0 16px;
+        }
+
+
+        &__logo {
+            display: inline-block;
+            
+            
+        }
+
+        &__body {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__copyright {
+            margin-left: 3.125vw;
+            padding-bottom: 35px;
+            padding-right: 35vw;
+        }
+    
+
+    }
+}
+
+@include huge {
+   .footer {
+
+    margin-top: 16px;
+
+    &__header {
+        padding-top: 24px;
+        margin-bottom: 0;
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__header, &__body {
+        margin-left: 12.5vw;
+        margin-right: 12.5vw;
+    }
+
+    &__logo {
+        display: inline-block;
+        height: 24px;
+        width: 120px;
+        
+    }
+
+
+    &__body {
+        margin-top: 32px;
+        margin-bottom: 40px;
+        margin-right: 34vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & h4 {
+        margin-bottom: 24px;
+    }
+
+    &__copyright {
+        margin-left: 12.5vw;
+        padding-bottom: 35px;
+        padding-right: 35vw;
+    }
+
+   }
+}
+
+/*
+"footer__body--america" contains the info 
+for the agent for US / South America / Japan.
+
+"footer__body--other" contains the info 
+for the agent for UK / EU / AU.
+
+*/
