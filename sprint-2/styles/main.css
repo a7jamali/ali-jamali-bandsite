@@ -591,17 +591,16 @@ for the agent for UK / EU / AU.
   .comments__avatar {
     width: 48px;
     border-radius: 100%;
-    margin-right: 0;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .comments__div {
-    margin-right: 31.6vw;
-  }
   .comments__title {
     margin-left: -3vw;
     font-size: 3rem;
+  }
+  .comments__form, .comments__body {
+    width: 36.666vw;
   }
 }
 
@@ -645,16 +644,20 @@ for the agent for UK / EU / AU.
   .showshero__album {
     padding-left: 12.5vw;
     padding-top: 160px;
+    font-size: 3rem;
   }
   .showshero__text {
     height: 670px;
     font-size: 5rem;
-    padding-top: 200px;
+    margin-right: 50vw;
     padding-left: 12.5vw;
   }
   .soundcloud {
-    display: inline;
-    text-align: right;
+    width: 30vw;
+    height: 346px;
+    margin-left: 55vw;
+    padding-bottom: 200px;
+    z-index: 1;
   }
 }
 

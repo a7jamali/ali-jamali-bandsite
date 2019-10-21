@@ -120,7 +120,6 @@
         &__avatar {
             width: 48px;
             border-radius: 100%;
-            margin-right: 0;
         }
 
     }
@@ -130,13 +129,17 @@
 
     .comments {
     &__div {
-        margin-right: 31.6vw;
-
+        
     }
 
     &__title {
         margin-left: -3vw;
         font-size: 3rem;
     }
+
+    &__form, &__body {
+        width: 36.666vw;
+    }
+
 }
 }
