@@ -475,6 +475,10 @@ for the agent for US / South America / Japan.
 for the agent for UK / EU / AU.
 
 */
+table {
+  border-collapse: collapse;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
