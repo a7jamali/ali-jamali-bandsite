@@ -255,13 +255,11 @@
 .gallery__photo {
   max-width: 90vw;
   margin: 8px auto;
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
 }
 
 .gallery__photo:hover {
-  -webkit-filter: blur(0) grayscale(100%);
-          filter: blur(0) grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 @media only screen and (min-width: 768px) {
@@ -475,6 +473,173 @@ for the agent for US / South America / Japan.
 for the agent for UK / EU / AU.
 
 */
+.comments__title {
+  margin-bottom: 40px;
+  font-family: AvenirBold;
+  font-size: 1.25rem;
+}
+
+.comments__div {
+  margin: 72px 5vw;
+}
+
+.comments__form, .comments__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70vw;
+}
+
+.comments__label {
+  font-family: AvenirDemi;
+  text-transform: uppercase;
+  color: #afafaf;
+}
+
+.comments__input-name, .comments__textarea {
+  background: #e1e1e1;
+  margin-bottom: 16px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 2px solid #afafaf;
+}
+
+.comments__input-name:focus, .comments__textarea:focus {
+  border: 3px solid #323232;
+  outline: none;
+}
+
+.comments__input-name {
+  height: 40px;
+}
+
+.comments__textarea {
+  height: 120px;
+  padding-top: 5px;
+}
+
+.comments__avatar {
+  width: 48px;
+  border-radius: 100%;
+  float: left;
+  margin-right: 5vw;
+}
+
+.comments__submit {
+  background: #323232;
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.comments__forum {
+  margin-top: 32px;
+  border-bottom: 1px solid #afafaf;
+}
+
+.comments__post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-bottom: 24px;
+  margin-right: 5vw;
+  border-top: 1px solid #afafaf;
+}
+
+.comments__post-name {
+  font-family: AvenirDemi;
+}
+
+.comments__post-date {
+  color: #afafaf;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: auto;
+}
+
+.comments__post-body {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .comments__title {
+    margin-left: -13vw;
+  }
+  .comments__div {
+    margin-left: 16.15vw;
+    margin-right: 16.15vw;
+  }
+  .comments__submit {
+    background: #323232;
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .comments__avatar {
+    width: 48px;
+    border-radius: 100%;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .comments__div {
+    margin-right: 31.6vw;
+  }
+  .comments__title {
+    margin-left: -3vw;
+    font-size: 3rem;
+  }
+}
+
+.showshero {
+  background-image: url(../../assets/images/unsplash/club-3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.showshero__text {
+  padding-top: 50px;
+  padding-left: 16px;
+  height: 183px;
+  font-family: AvenirBold;
+  font-size: 28px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .showshero__text {
+    height: 400px;
+    font-size: 3rem;
+    padding-top: 100px;
+    padding-left: 3.125vw;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .showshero__text {
+    height: 670px;
+    font-size: 5rem;
+    padding-top: 200px;
+    padding-left: 12.5vw;
+  }
+}
+
 table {
   border-collapse: collapse;
 }

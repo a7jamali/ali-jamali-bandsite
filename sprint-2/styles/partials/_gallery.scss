@@ -12,10 +12,9 @@
     &__photo {
         max-width: 90vw;
         margin: 8px auto;
-        filter: blur(5px);
 
         &:hover {
-            filter: blur(0) grayscale(100%);
+            filter: grayscale(100%);
 
 
         }

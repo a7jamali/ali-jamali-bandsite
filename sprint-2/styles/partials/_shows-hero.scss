@@ -1,0 +1,41 @@
+.showshero {
+    background-image: url(../../assets/images/unsplash/club-3.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &__text {
+    padding-top: 50px;
+    padding-left: 16px;
+    height:183px;
+    font-family: AvenirBold;
+    font-size: 28px;
+    background-size: cover;
+    background-position: center;
+    color: $white;
+    }
+
+    &__album {
+
+
+    }
+}
+
+@include medium {
+
+    .showshero__text{
+    height: 400px;
+    font-size: 3rem;
+    padding-top: 100px;
+    padding-left: 3.125vw;
+    }
+}
+
+@include huge {
+
+    .showshero__text{
+    height: 670px;
+    font-size: 5rem;
+    padding-top: 200px;
+    padding-left: 12.5vw;
+    }
+}

@@ -6,6 +6,7 @@
 @import "./partials/gallery";
 @import "./partials/footer";
 @import "./partials/comments";
+@import "./partials/shows-hero";
 @import "./partials/shows";
 
 
@@ -16,7 +17,9 @@
     padding: 0;
 }
 
-.hero__text {
+.hero {
+
+    &__text {
     padding-top: 50px;
     padding-left: 16px;
     height:183px;
@@ -26,7 +29,12 @@
     background-size: cover;
     background-position: center;
     color: $white;
+    }
 
+    &__album {
+
+
+    }
 }
 
 @include medium {
