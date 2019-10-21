@@ -63,7 +63,6 @@
 
     &__forum {
         margin-top: 32px;
-        border-bottom: 1px solid $silver;
 
     }
 
@@ -127,13 +126,21 @@
 
 @include huge {
 
+
     .comments {
+
+
     &__div {
+        margin-left: 27.50vw;
         
     }
 
+    &__avatar {
+        margin-right: 20px;
+    }
+
     &__title {
-        margin-left: -3vw;
+        margin-left: -14.5vw;
         font-size: 3rem;
     }
 

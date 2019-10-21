@@ -538,7 +538,6 @@ for the agent for UK / EU / AU.
 
 .comments__forum {
   margin-top: 32px;
-  border-bottom: 1px solid #afafaf;
 }
 
 .comments__post {
@@ -595,8 +594,14 @@ for the agent for UK / EU / AU.
 }
 
 @media only screen and (min-width: 1440px) {
+  .comments__div {
+    margin-left: 27.50vw;
+  }
+  .comments__avatar {
+    margin-right: 20px;
+  }
   .comments__title {
-    margin-left: -3vw;
+    margin-left: -14.5vw;
     font-size: 3rem;
   }
   .comments__form, .comments__body {
