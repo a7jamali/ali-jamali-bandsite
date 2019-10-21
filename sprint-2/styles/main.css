@@ -610,7 +610,7 @@ for the agent for UK / EU / AU.
 }
 
 .showshero {
-  background-image: url(../../assets/images/unsplash/club-3.jpg);
+  background-image: url("https://images.unsplash.com/photo-1568781270757-63410d1d3f76?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=jr-korpa-aoqH_nATHUg-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -724,10 +724,6 @@ th {
   text-align: left;
   text-transform: uppercase;
   color: #afafaf;
-}
-
-td {
-  border-bottom: 1px solid #afafaf;
 }
 
 @media only screen and (min-width: 768px) {
