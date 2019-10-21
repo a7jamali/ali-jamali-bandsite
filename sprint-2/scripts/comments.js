@@ -1,3 +1,13 @@
+//
+//
+////Could not get the avatars to work; 
+///spoke with Noor who advised I should get try to get it by Sprint-3
+//
+//
+//
+//
+//
+//
 //date fetcher:
 let d = new Date();
 let dateNow = d.getDate() + "/" + d.getMonth() + 1+ "/" + d.getFullYear();
@@ -53,7 +63,7 @@ function createComment(commentsDataLog) {
 
     document.querySelector(".comments__forum").innerHTML = "";
   
-    let generateNewComments = { name: "", comment: "", date: dateNow };
+    let generateNewComments = {  name: "", comment: "", date: dateNow };
     generateNewComments.name = submitEvent.target.name.value;
     generateNewComments.comment = submitEvent.target.commentInput.value;
     commentsDataLog.unshift(generateNewComments);
@@ -64,3 +74,13 @@ function createComment(commentsDataLog) {
 
     submitEvent.target.reset();
   });
+
+
+  /*
+  let submitAvatar = document.createElement('div');
+  submitAvatar.className = "comments__finished--avatar";
+  let submitAvatarImage = document.createElement('img');
+  submitAvatarImage.src = './assets/avatars/user-1.svg';
+  submitAvatar.appendChild(submitAvatarImage);
+  commentsCell.appendChild(submitAvatar);
+  */

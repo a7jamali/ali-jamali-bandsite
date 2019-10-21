@@ -666,62 +666,7 @@ for the agent for UK / EU / AU.
   }
 }
 
-table {
-  border-collapse: collapse;
-  width: 93.75vw;
-  margin-left: 5.125vw;
-}
-
-th {
-  text-align: left;
-  text-transform: uppercase;
-  color: #afafaf;
-}
-
-td {
-  margin-right: 3.125vw;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-td.table__button {
-  margin-right: 0px;
-}
-
-.shows__title {
-  margin-left: 3.125vw;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.shows tbody {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.table__button {
-  width: 160px;
-  background: #323232;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 5px;
-}
-
-button {
-  background: none;
-  border: none;
-}
-
+/*MOBILE TABLE*/
 .mobile__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -732,6 +677,8 @@ button {
           flex-direction: column;
   border-bottom: 1px solid #afafaf;
   margin-bottom: 16px;
+  margin-left: 5.125vw;
+  margin-right: 5.125vw;
 }
 
 .mobile__keyword {
@@ -764,14 +711,62 @@ button {
 
 button {
   color: white;
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+table {
+  width: 93.75vw;
+}
+
+th {
+  text-align: left;
+  text-transform: uppercase;
+  color: #afafaf;
+}
+
+td {
+  border-bottom: 1px solid #afafaf;
+}
+
+@media only screen and (min-width: 768px) {
+  .shows__title {
+    margin-left: 3.125vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .shows__table {
+    display: table;
+    border-spacing: 0 32px;
+    width: 93.75vw;
+    margin-left: 3.125vw;
+    margin-right: 3.125vw;
+    margin-bottom: 40px;
+  }
+  .table__row {
+    height: 48px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .table__button {
+    width: 160px;
+    background: #323232;
+    border-radius: 5px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-  table {
-    margin-left: 25vw;
+  .shows__table {
+    margin: 0;
+    padding-left: 31.666vw;
+    padding-right: 12.5vw;
   }
   .shows__title {
+    font-size: 4rem;
     margin-top: 48px;
+    margin-left: 12.5vw;
+    margin-bottom: 20px;
   }
 }
 
