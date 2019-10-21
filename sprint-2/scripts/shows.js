@@ -32,7 +32,7 @@ let shows = [
 
       let child = row.insertCell();
       let btn = document.createElement("button");
-      btn.innerHTML = "Pem";
+      btn.innerHTML = "Buy Tickets";
       child.appendChild(btn)
       child.classList.add("table__button");
       ; 
@@ -56,7 +56,7 @@ let shows = [
       }
       let child = row.insertCell();
       let btn = document.createElement("button");
-      btn.innerHTML = "Buy tickets";
+      btn.innerHTML = "Buy Tickets";
       child.appendChild(btn);
       child.classList.add("mobile__button");
 

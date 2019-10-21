@@ -611,15 +611,25 @@ for the agent for UK / EU / AU.
   background-position: center;
 }
 
+.showshero__album {
+  color: white;
+  padding-top: 100px;
+  padding-left: 3.125vw;
+}
+
 .showshero__text {
   padding-top: 50px;
   padding-left: 16px;
-  height: 183px;
+  height: 470px;
   font-family: AvenirBold;
   font-size: 28px;
   background-size: cover;
   background-position: center;
   color: #fff;
+}
+
+.soundcloud {
+  margin-left: 5vw;
 }
 
 @media only screen and (min-width: 768px) {
@@ -632,25 +642,76 @@ for the agent for UK / EU / AU.
 }
 
 @media only screen and (min-width: 1440px) {
+  .showshero__album {
+    padding-left: 12.5vw;
+    padding-top: 160px;
+  }
   .showshero__text {
     height: 670px;
     font-size: 5rem;
     padding-top: 200px;
     padding-left: 12.5vw;
   }
+  .soundcloud {
+    display: inline;
+    text-align: right;
+  }
 }
 
 table {
   border-collapse: collapse;
+  width: 93.75vw;
+  margin-left: 5.125vw;
 }
 
-.shows__title, .shows__table {
-  margin-left: 5vw;
+th {
+  text-align: left;
+  text-transform: uppercase;
+  color: #afafaf;
+}
+
+td {
+  margin-right: 3.125vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+td.table__button {
+  margin-right: 0px;
 }
 
 .shows__title {
-  margin-top: 32px;
-  margin-bottom: 40px;
+  margin-left: 3.125vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.shows tbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.table__button {
+  width: 160px;
+  background: #323232;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+button {
+  background: none;
+  border: none;
 }
 
 .mobile__row {
@@ -695,6 +756,15 @@ table {
 
 button {
   color: white;
+}
+
+@media only screen and (min-width: 1440px) {
+  table {
+    margin-left: 25vw;
+  }
+  .shows__title {
+    margin-top: 48px;
+  }
 }
 
 * {

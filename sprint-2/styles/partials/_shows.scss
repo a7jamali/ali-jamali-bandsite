@@ -1,19 +1,67 @@
 table {
     border-collapse: collapse;
+    width: 93.75vw;
+    margin-left: 5.125vw;
 
+}
+
+th {
+    text-align: left;
+    text-transform: uppercase;
+    color: $silver;
+}
+
+td {
+    margin-right: 3.125vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+td.table__button {
+    margin-right: 0px;
 }
 
 .shows {
-    &__title, &__table {
-        margin-left: 5vw;
-
-    }
 
     &__title {
-        margin-top: 32px;
-        margin-bottom: 40px;
+        margin-left: 3.125vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
     }
+    
+
+    tbody {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
 }
+
+.table {
+    &__button {
+        width: 160px;
+        background: $black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+
+
+
+
 
 .mobile {
     &__row {
@@ -51,4 +99,18 @@ table {
 
 button {
     color: white;
+}
+
+@include huge {
+    table {
+        margin-left: 25vw;
+    }
+
+    .shows {
+
+        &__title {
+            margin-top: 48px;
+        }
+    }
+
 }

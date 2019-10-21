@@ -3,10 +3,16 @@
     background-size: cover;
     background-position: center;
 
+    &__album {
+        color: white;
+        padding-top: 100px;
+        padding-left: 3.125vw;
+    }
+
     &__text {
     padding-top: 50px;
     padding-left: 16px;
-    height:183px;
+    height:470px;
     font-family: AvenirBold;
     font-size: 28px;
     background-size: cover;
@@ -14,10 +20,11 @@
     color: $white;
     }
 
-    &__album {
 
+}
 
-    }
+.soundcloud {
+    margin-left: 5vw;
 }
 
 @include medium {
@@ -32,10 +39,24 @@
 
 @include huge {
 
-    .showshero__text{
+    .showshero {
+        &__album {
+            padding-left: 12.5vw;
+            padding-top: 160px;
+        }
+    
+    &__text{
     height: 670px;
     font-size: 5rem;
     padding-top: 200px;
     padding-left: 12.5vw;
+    
     }
+}
+
+.soundcloud {
+    display: inline;
+    text-align: right;
+}
+
 }
