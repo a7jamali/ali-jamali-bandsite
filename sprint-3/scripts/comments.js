@@ -1,7 +1,3 @@
-let d = new Date();
-let dateNow = d.getDate() + "/" + d.getMonth() + 1+ "/" + d.getFullYear();
-
-
 axios.get("https://project-1-api.herokuapp.com/comments?api_key=aj1374").then(result =>{
   console.log(result.data);
   const commentsDataLog = result.data;
@@ -30,7 +26,8 @@ axios.get("https://project-1-api.herokuapp.com/comments?api_key=aj1374").then(re
   
       let commentDate = document.createElement("h3");
       newComment.appendChild(commentDate);
-      commentDate.innerText = commentsDataLog[i].timestamp;
+      let newDate = new Date(commentsDataLog[i].timestamp).toLocaleDateString("en-US")
+      commentDate.innerText = newDate;
       commentDate.classList.add("comments__post-date");
       
       let commentBreak = document.createElement("box");
@@ -68,13 +65,15 @@ axios.get("https://project-1-api.herokuapp.com/comments?api_key=aj1374").then(re
       })
 
     });
-
+/*
     function timeCon(num){
-      let days = 1000 * 60 * 60 * 24;
-      let time = new Date();
-      let today = time.getTime();
-      let timeStamp = Math.ceil((today - data)/days);
-      return timeStamp === 1 ? `${timeStamp} Day ago`: `${timeStamp} Days ago`
+      let timestamp = document.getElementsByClassName("comments__post-date");
+      let newTime = new Date(timestamp*1000);
+      return newTime;
+      
     }
+
+    timeCon(timestamp)
+    */
+
     
-    timeCon(data.timestamp)

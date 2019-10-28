@@ -87,8 +87,7 @@
         &-name {
             font-family: AvenirDemi;
             margin-top: 24px;
-            align-self: center;
-            justify-self: center;
+            align-self: flex-start;
             font-size: 1.25rem;
 
 
@@ -96,10 +95,9 @@
         }
         &-date {
             color: $silver;
-            align-self: center;
-            justify-self: right;
             margin-left: auto;
-            font-size: .66rem;
+            margin-top: 24px;
+
 
             
         }
