@@ -78,7 +78,7 @@
 
 
   if (width <= 500) {
-    axios.get("https://project-1-api.herokuapp.com/showdates?api_key=jj").then(result =>{
+    axios.get("https://project-1-api.herokuapp.com/showdates?api_key=aj1374").then(result =>{
       console.log(result);
       const shows = result.data;
       let showKeys = Object.keys(result.data[0]);
@@ -87,7 +87,7 @@
   }
   
   if (width > 500) {
-    axios.get("https://project-1-api.herokuapp.com/showdates?api_key=jj").then(result =>{
+    axios.get("https://project-1-api.herokuapp.com/showdates?api_key=aj1374").then(result =>{
       console.log(result);
       const shows = result.data;
       let showKeys = Object.keys(result.data[0]);

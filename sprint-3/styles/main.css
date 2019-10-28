@@ -581,6 +581,12 @@ for the agent for UK / EU / AU.
 .comments__post-name {
   font-family: AvenirDemi;
   margin-top: 24px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 1.25rem;
 }
 
 .comments__post-date {
@@ -591,6 +597,7 @@ for the agent for UK / EU / AU.
   -ms-grid-column-align: right;
       justify-self: right;
   margin-left: auto;
+  font-size: .66rem;
 }
 
 .comments__post-break {

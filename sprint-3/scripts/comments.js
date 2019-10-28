@@ -2,8 +2,7 @@ let d = new Date();
 let dateNow = d.getDate() + "/" + d.getMonth() + 1+ "/" + d.getFullYear();
 
 
-
-axios.get("https://project-1-api.herokuapp.com/comments?api_key=jj").then(result =>{
+axios.get("https://project-1-api.herokuapp.com/comments?api_key=aj1374").then(result =>{
   console.log(result.data);
   const commentsDataLog = result.data;
   createComment(commentsDataLog);
@@ -61,7 +60,7 @@ axios.get("https://project-1-api.herokuapp.com/comments?api_key=jj").then(result
     };
   
     axios.post(
-        "https://project-1-api.herokuapp.com/comments?api_key=jj",
+        "https://project-1-api.herokuapp.com/comments?api_key=aj1374",
         axiosObject
       )
       .then(function(response) {
@@ -69,3 +68,13 @@ axios.get("https://project-1-api.herokuapp.com/comments?api_key=jj").then(result
       })
 
     });
+
+    function timeCon(num){
+      let days = 1000 * 60 * 60 * 24;
+      let time = new Date();
+      let today = time.getTime();
+      let timeStamp = Math.ceil((today - data)/days);
+      return timeStamp === 1 ? `${timeStamp} Day ago`: `${timeStamp} Days ago`
+    }
+    
+    timeCon(data.timestamp)
