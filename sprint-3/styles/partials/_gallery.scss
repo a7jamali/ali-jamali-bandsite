@@ -1,0 +1,82 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__title {
+        font-family: AvenirBold;
+        margin-bottom: 16px;
+        margin-left: 5vw;
+    }
+
+    &__photo {
+        max-width: 90vw;
+        margin: 8px auto;
+
+        &:hover {
+            filter: grayscale(100%);
+
+
+        }
+        
+    }
+}
+
+@include medium {
+    .gallery {
+
+        &__title {
+            margin-left: 3.125vw;
+        }
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0 1.5625vw;
+
+
+        &__photo {
+        width: 29.166%;
+        height: 126px;
+        padding-bottom: 24px;
+
+        &:hover {
+            filter: blur(0) grayscale(100%);
+
+        }
+
+        }
+    }
+}
+
+@include huge{
+
+    .gallery {
+
+
+        &__title {
+            margin: 48px auto 64px 12.5vw;
+        }
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0 12.5vw;
+
+
+        &__photo {
+        width: 23.8vw;
+        height: 193px;
+        margin: 0;
+
+        &:hover {
+            filter: blur(0) grayscale(100%);
+            flex-grow: 2;
+            height: auto;
+
+        }
+
+        }
+    }
+
+}

@@ -1,0 +1,139 @@
+
+
+.header {
+    padding-top: 10px;
+    color: $white;
+    display: block;
+    text-align: center;
+    height: 80px;
+    background: $black;
+    font-size: 1.25rem;
+
+    /*NOTE: The margin between the logo and nav-items 
+    is set at 0, but it will still resemble the 16px
+    dictated in the specsheet. This is because the SVG logo
+    already incorporates significant linespacing below "BANDSITE"
+    
+    Setting a 16px margin between the logo and the nav-items
+    in an 80px header will push the nav-items outside.*/
+
+    &__logo {
+        margin-top: 8px;
+        
+    }
+
+    & a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+        color: rgb(206, 59, 150);
+        filter: blur(1px);
+        }
+
+    }
+
+    &__navbar-list {
+        font-weight: 600;
+        padding-bottom: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        }
+
+    &__navbar-item {
+        
+        width: 50%;
+        text-align: center;
+
+
+
+        }
+
+}
+
+#active {
+    border-bottom: 4px solid $white;
+    z-index: 1;    
+
+}
+
+@include medium {
+
+    .header {
+    height: 80px;
+    padding-left: 3.125vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__navbar-list {
+    align-self: center;
+    padding-left: 80px;
+
+    }
+
+    &__navbar-item {
+    padding-right: 80px;
+    align-self: center;
+
+    }
+
+
+    }
+
+    #active {
+
+        &-bio {
+            padding-right: 2rem;
+            margin-top: 5px;
+            border-bottom: 4px solid $white;
+            padding-right: 6.4rem;
+            line-height: 56px;
+            width: 30%;
+        }
+
+        &-shows {
+            padding-right: 2rem;
+            margin-top: 5px;
+            border-bottom: 4px solid $white;
+            padding-left: -10rem;
+            line-height: 56px;
+            width: 33%;
+        }
+}
+
+}
+
+@include huge {
+    .header {
+        padding-left: 12.5vw;
+    
+    }
+
+        #active {
+
+            &-bio {
+            padding-right: 2rem;
+            margin-top: 5px;
+            border-bottom: 4px solid $white;
+            padding-right: 6.3rem;
+            line-height: 56px;
+            width: 30%;
+        }
+
+        &-shows {
+            padding-right: 2rem;
+            margin-top: 5px;
+            border-bottom: 4px solid $white;
+            padding-left: -10rem;
+            line-height: 56px;
+            width: 33%;
+        }
+
+
+        }
+            
+}       

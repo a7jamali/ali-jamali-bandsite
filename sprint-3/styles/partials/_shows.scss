@@ -1,0 +1,126 @@
+/*MOBILE TABLE*/
+.mobile {
+    &__row {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid $silver;
+        margin-bottom: 16px;
+        margin-left: 5.125vw;
+        margin-right: 5.125vw;
+
+
+    }
+
+    &__keyword {
+        text-transform: uppercase;
+        color: $silver;
+        margin-bottom: 16px;
+        
+    }
+
+    &__cell {
+        margin-bottom: 24px;
+    }
+
+    &__button {
+        background: $black;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        border-radius: 5px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+}
+
+button {
+    color: white;
+    background: none;
+    border: none;
+    width: 100%;
+
+}
+
+
+
+table {
+    width: 93.75vw;
+
+}
+
+th {
+    text-align: left;
+    text-transform: uppercase;
+    color: $silver;
+}
+
+
+
+
+@include medium {
+
+.shows {
+
+    &__title {
+        margin-left: 3.125vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    &__table {
+        display: table;
+        border-spacing: 0 32px;
+        width: 93.75vw;
+        margin-left: 3.125vw;
+        margin-right: 3.125vw;
+        margin-bottom: 40px;
+    }
+
+}
+
+
+.table {
+
+    &__row {
+        height: 48px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+
+        
+    }
+
+    &__button {
+    
+        width: 160px;
+        background: $black;
+        border-radius: 5px;
+    }
+}
+
+}
+
+
+
+
+
+
+@include huge {
+    .shows {
+        &__table {
+            margin: 0;
+            padding-left: 31.666vw;
+            padding-right: 12.5vw;
+        }
+
+        &__title {
+            font-size: 4rem;
+            margin-top: 48px;
+            margin-left: 12.5vw;
+            margin-bottom: 20px;
+    
+        }
+    }
+}

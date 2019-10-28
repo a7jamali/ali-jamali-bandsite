@@ -1,0 +1,55 @@
+@import "./partials/breakpoints";
+@import "./partials/fonts";
+@import "./partials/colors";
+@import "./partials/header";
+@import "./partials/about-section";
+@import "./partials/gallery";
+@import "./partials/footer";
+@import "./partials/comments";
+@import "./partials/shows-hero";
+@import "./partials/shows";
+
+
+* {
+    box-sizing: border-box;
+    font-family: AvenirRegular;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+
+    &__text {
+    padding-top: 50px;
+    padding-left: 16px;
+    height:183px;
+    font-family: AvenirBold;
+    font-size: 28px;
+    background-image: url(../assets/images/unsplash/club-1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $white;
+    }
+
+
+}
+
+@include medium {
+
+    .hero__text{
+    height: 400px;
+    font-size: 3rem;
+    padding-top: 100px;
+    padding-left: 3.125vw;
+    }
+}
+
+@include huge {
+
+    .hero__text{
+    height: 670px;
+    font-size: 5rem;
+    padding-top: 200px;
+    padding-left: 12.5vw;
+    }
+}

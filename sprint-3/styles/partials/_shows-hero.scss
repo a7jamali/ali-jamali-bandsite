@@ -1,0 +1,66 @@
+.showshero {
+    background-image: url("https://images.unsplash.com/photo-1568781270757-63410d1d3f76?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=jr-korpa-aoqH_nATHUg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+
+    &__album {
+        color: white;
+        padding-top: 100px;
+        padding-left: 3.125vw;
+    }
+
+    &__text {
+    padding-top: 50px;
+    padding-left: 16px;
+    height:470px;
+    font-family: AvenirBold;
+    font-size: 28px;
+    background-size: cover;
+    background-position: center;
+    color: $white;
+    }
+
+
+}
+
+.soundcloud {
+    margin-left: 5vw;
+}
+
+@include medium {
+
+    .showshero__text{
+    height: 400px;
+    font-size: 3rem;
+    padding-top: 100px;
+    padding-left: 3.125vw;
+    }
+}
+
+@include huge {
+
+    .showshero {
+        &__album {
+            padding-left: 12.5vw;
+            padding-top: 160px;
+            font-size: 3rem;
+        }
+    
+    &__text{
+    height: 670px;
+    font-size: 5rem;
+    margin-right: 50vw;
+    padding-left: 12.5vw;
+    
+    }
+}
+
+.soundcloud {
+    width: 30vw;
+    height: 346px;
+    margin-left: 55vw;
+    padding-bottom: 200px;
+    z-index: 1;
+}
+
+}
