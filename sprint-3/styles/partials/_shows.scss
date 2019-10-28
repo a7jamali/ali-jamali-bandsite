@@ -1,4 +1,10 @@
 /*MOBILE TABLE*/
+.hidden {
+    color: white;
+    user-select: none;
+}
+
+
 .mobile {
     &__row {
         display: flex;

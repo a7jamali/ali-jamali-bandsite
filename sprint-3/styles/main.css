@@ -674,6 +674,14 @@ for the agent for UK / EU / AU.
 }
 
 /*MOBILE TABLE*/
+.hidden {
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .mobile__row {
   display: -webkit-box;
   display: -ms-flexbox;
