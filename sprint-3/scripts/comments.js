@@ -41,17 +41,25 @@ axios.get("https://project-1-api.herokuapp.com/comments?api_key=jj").then(result
   }
   
 
+
+
   let form = document.querySelector(".comments__form");
-  form.addEventListener("submit", submitEvent => {
-    submitEvent.preventDefault();
-
-    document.querySelector(".comments__forum").innerHTML = "";
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    let name = event.target.name.value;
+    let commentInput = event.target.commentInput.value;
   
-    let generateNewComments = {  name: "", comment: "", date: "dateNow" };
-    generateNewComments.name = submitEvent.target.name.value;
-    generateNewComments.comment = submitEvent.target.commentInput.value;
-    commentsDataLog.unshift(generateNewComments);
+    let axiosObject = {
+      name: name,
+      comment: commentInput,
+    };
+  
+    axios.post(
+        "https://project-1-api.herokuapp.com/comments?api_key=jj",
+        axiosObject
+      )
+      .then(function(response) {
+        console.log(response);
+      })
 
-
-    submitEvent.target.reset();
-  });
+    });
