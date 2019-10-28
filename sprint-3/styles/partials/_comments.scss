@@ -71,22 +71,44 @@
         margin-bottom: 24px;
         margin-right: 5vw;
         border-top: 1px solid $silver;
+        display: flex;
+        flex-flow: row wrap;
 
         &-avatar {
             width: 48px;
             border-radius: 100%;
+            margin-right: 1.11vw;
+            margin-top: 24px;
+
+            
 
         }
 
         &-name {
             font-family: AvenirDemi;
+            margin-top: 24px;
+
+            
         }
         &-date {
             color: $silver;
-
-
+            align-self: center;
+            justify-self: right;
+            margin-left: auto;
+            
         }
+
+        &-break {
+            width: 100vw;
+            height: 16px;
+        }
+
         &-body {
+            margin-top: auto;
+            align-self: flex-end;
+            justify-self: flex-end;
+
+
             
         }
     }
@@ -104,6 +126,7 @@
             margin-right: 16.15vw;
   
         }
+
 
         &__submit {
             background: $black;

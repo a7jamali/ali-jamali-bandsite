@@ -2,6 +2,7 @@ let d = new Date();
 let dateNow = d.getDate() + "/" + d.getMonth() + 1+ "/" + d.getFullYear();
 
 
+
 axios.get("https://project-1-api.herokuapp.com/comments?api_key=jj").then(result =>{
   console.log(result.data);
   const commentsDataLog = result.data;
@@ -30,9 +31,14 @@ axios.get("https://project-1-api.herokuapp.com/comments?api_key=jj").then(result
   
       let commentDate = document.createElement("h3");
       newComment.appendChild(commentDate);
-      commentDate.innerText = commentsDataLog[i].dateCon;
+      commentDate.innerText = commentsDataLog[i].timestamp;
       commentDate.classList.add("comments__post-date");
       
+      let commentBreak = document.createElement("box");
+      newComment.appendChild(commentBreak);
+      commentBreak.classList.add("comments__post-break");
+
+
       let commentBody = document.createElement("p");
       newComment.appendChild(commentBody);
       commentBody.innerText = commentsDataLog[i].comment;

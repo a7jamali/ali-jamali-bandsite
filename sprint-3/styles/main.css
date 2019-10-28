@@ -562,19 +562,47 @@ for the agent for UK / EU / AU.
   margin-bottom: 24px;
   margin-right: 5vw;
   border-top: 1px solid #afafaf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .comments__post-avatar {
   width: 48px;
   border-radius: 100%;
+  margin-right: 1.11vw;
+  margin-top: 24px;
 }
 
 .comments__post-name {
   font-family: AvenirDemi;
+  margin-top: 24px;
 }
 
 .comments__post-date {
   color: #afafaf;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  margin-left: auto;
+}
+
+.comments__post-break {
+  width: 100vw;
+  height: 16px;
+}
+
+.comments__post-body {
+  margin-top: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-end;
 }
 
 @media only screen and (min-width: 768px) {
@@ -649,6 +677,10 @@ for the agent for UK / EU / AU.
     font-size: 3rem;
     padding-top: 100px;
     padding-left: 3.125vw;
+  }
+  .soundcloud {
+    width: 55vw;
+    margin-bottom: 150px;
   }
 }
 
